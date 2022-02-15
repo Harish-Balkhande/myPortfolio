@@ -1,0 +1,431 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 3%;
+    height: 100vh;
+    padding-right: 18px;
+    position: fixed;
+    background-color: #e5e6ec;
+    left: -60px;
+    top: 0;
+    transition: all 0.3s ease;
+    transition-delay: 0.8s;
+}
+#sidebar a{
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    transform: rotate(180deg);
+    padding: 13px 0;
+    margin-left: 15px;
+}
+#grid-container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+/* .hamburger-container{
+    width: 15px;
+    position: fixed;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: darkorange;
+    cursor: pointer;
+    z-index: 1;
+}
+#hamburger{
+    margin: 10px 0 0 40px;
+}
+#close{
+    display: none;
+    margin: 10px 0 0 160px;
+    font-size: 32px;
+    padding: 6px 17px;
+}
+.hamburger-btn:hover{
+    color: cyan;
+}
+input[type="checkbox"]{
+    display: none;
+} */
+/* -------------------------------------- */
+.col-1{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    background-color: #e5e6ec;
+    transition: all 0.7s ease;
+}
+@media(max-width:768px){
+    .col-1{
+        left: -300px;
+        width: 30%;
+        transition: all 0.7s ease;
+    }
+    /* #click:checked ~ .col-1{
+        left: 0;
+    }
+    #click:checked ~ #close{
+        display: block;
+        position: fixed;
+        right: 10px;
+        z-index: 2;
+    } */
+    #sidebar{
+        left: 0;
+    }
+}
+@media(max-width:576px){
+    .col-1{
+        left: -300px;
+        width: 40%;
+    }
+    /* #click:checked ~ #close{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 2;
+    } */
+}
+.profile-pic{
+    display: block;
+    border-radius: 60px;
+    background-color: wheat;
+    width: 108px;
+    margin: 15px auto;
+}
+.col-1 .name{
+    text-align: center;
+    font-size: 26px;
+}
+.name-desc{
+    text-align: center;
+    margin: 7px;
+}
+hr{
+    width: 84%;
+    color: black;
+    
+}
+.nav-tabs{
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: black;
+    font-weight: 600;
+}
+.nav-tabs:hover{
+    color: darkorange;
+    text-decoration: underline;
+}
+.active-tab{
+    background-color: rgb(61, 57, 57);
+    color: darkorange
+}
+
+/* ---------------------------------------- */
+.col-2{
+    position: absolute;
+    right: 0;
+    width: 80%;
+    /* border: 2px solid purple; */
+}
+
+/* =============== Home section ========== */
+#home{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    /* background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://cdn.pixabay.com/photo/2017/02/05/00/19/web-design-2038872_1280.jpg"); */
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/static/images/background/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#hero-pic{
+    display: none;
+}
+#hero strong{
+    font-size: 40px;
+    font-weight: bold;
+    color:darkorange ;
+}
+#hero p{
+    color: cyan;
+    text-align: center;
+    margin: 0;
+}
+#hero h1{
+    text-align: center;
+    margin: 0;
+}
+@media(max-width:768px) {
+    .col-2{
+        width: 100%;
+    }
+    #hero-pic{
+        display: block;
+    }
+}
+/* ================= About ================== */
+#about p{
+    font-family: cursive;
+    text-align: justify;
+}
+/* ===============Skills section ============== */
+.skill-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px auto;
+    padding-bottom: 20px;
+    width: 80%;
+    /* height: 200px; */
+    background-color: rgb(71, 64, 64);
+}
+.skills{
+    margin: 25px;
+}
+.skills-heading{
+    margin: 0;
+    color: aliceblue;
+}
+#progress-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2px;
+}
+.progress-wrap{
+    width: 8rem;
+    height: 3px;
+    /* border: 1px solid purple; */
+    border-radius: 3px;
+}
+.progressbar{
+    /* width: 85%; */
+    height: 2px;
+    margin: 0;
+    overflow: hidden;
+    /* border: 1px solid blueviolet; */
+    /* background-color: blueviolet; */
+}
+.progress-persentage{
+    margin: 0px 10px;
+    margin-bottom: 0px;
+    color: aliceblue;
+}
+/* .card-container{
+    width: 120px;
+    height: 110px;
+    margin: 12px;
+    background-color: black;
+}
+.skill-Img{
+    display: block;
+    width: 60%;
+    margin: 14px auto;
+} */
+/* ====================== Education Section ================= */
+details{
+    margin: 10px 0px;
+}
+details > summary {
+    height: 18px;
+    list-style-type: none;
+    outline: none;
+    cursor: pointer;
+    /* border: 1px solid #e5e6ec; */
+    background-color: #e5e6ec;
+    padding: 15px;
+    /* border-radius: 15px; */
+  }
+  
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  details>summary::after {
+    content: '+ ';
+    float: right;
+    margin: -2px 25px;
+    font-weight: bolder;
+    font-size: 25px;
+  }
+  
+  details[open]>summary::after {
+    content: '- ';
+    float: right;
+    margin: -2px 25px;
+    font-weight: bolder;
+    font-size: 25px;
+  }
+
+/* details[open]>summary {
+    margin-bottom: 0.5rem;
+  } */
+  details > p{
+      background-color: #eeeeee;
+      margin: 0;
+      padding: 10px;
+  }
+/* ======================Project Section ===================== */
+.article-cover{
+    width: 100%;
+    padding: 10px 1px;
+    background-color: #e5e6ec;
+}
+.article-container{
+    width: 95%;
+    margin: 10px auto;
+    background-color: white;
+}
+.article-container > *{
+    padding: 9px 0px 12px 0px;
+    margin: 0px 10px 0px 10px;
+}
+.project-description{
+    padding: 4px 0px;
+}
+  /* ===================Work Section ======================= */
+/* #work .outer-container {
+    width: 600px;
+    margin: 100px auto; 
+} */
+#work .workProgressbar {
+    counter-reset: step;
+}
+#work .workProgressbar li {
+    list-style-type: none;
+    width: 100%;
+    /* float: left; */
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #7d7d7d;
+}
+#work .workProgressbar li:before {
+    width: 30px;
+    height: 30px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 30px;
+    border: 2px solid #7d7d7d;
+    display: block;
+    /* text-align: center; */
+    margin: 34px 0 0px 0px;
+    border-radius: 50%;
+    background-color: white;
+}
+#work .workProgressbar li:after {
+    width: 2px;
+    height: 100%;
+    content: '';
+    position: absolute;
+    background-color: #7d7d7d;
+    top: 34px;
+    left: 15px;
+    /* top: -58px; */
+    z-index: -1;
+}
+#work .workProgressbar li:last-child:after {
+    content: none;
+}
+#work .workProgressbar li.active {
+    color: green;
+}
+#work .workProgressbar li.active:before {
+    border-color: #55b776;
+}
+#work .workProgressbar li.active + li:after {
+    background-color: #55b776;
+}
+.para{
+    position: absolute;
+    left: 86px;
+    top: -10px;
+    text-align: left;
+}
+/* ====================== Contact Section ============================ */
+#contact .contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 100%;
+}
+#contact .contact-container .contact-card{
+    /* margin-right: 15px; */
+    /* border: 1px solid red; */
+    min-width: 50%;
+}
+#contact .cards{
+    padding: 20px;
+}
+#contact .cards .icon{
+    display: inline-block;
+    padding: 10px;
+    background-color: #f2f3f7;
+}
+#contact .cards .icon-size{
+    font-size: 30px;
+}
+#contact .cards .detail{
+    display: inline-block;
+    position: absolute;
+    margin-top: 22px;
+    margin-left: 15px;
+}
+/* ------------------- form --------------------- */
+#contact .contact-form{
+    /* border: 1px solid green; */
+    min-width: 50%;
+}
+#contact form{
+    width: 80%;
+    margin: 80px 0px 0px auto;
+}
+#contact form input,
+#contact form textarea{
+    display: block;
+    width: 80%;
+    /* height: 1rem; */
+    margin: 15px auto;padding: 15px;
+    border: transparent;
+    background-color: #f2f3f7;
+}
+#contact form input[type="button"]{
+    width: 9rem;
+    /* padding-bottom: 2rem; */
+    color: white;
+    background-color: blue;
+}
+
+/* ===================Utility classes================== */
+.section-heading{
+    display: block;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 78px auto 30px auto;
+}
+.section-container{
+    width: 80%;
+    margin: 80px auto;
+}

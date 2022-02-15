@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/static/css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="grid-container">
+        <!-- ------- Menu button ----------- -->
+        <!-- <input type="checkbox" id="click">
+        <label for="click" id="hamburger" class="hamburger-container"><i class="fa fa-bars hamburger-btn"></i></label>
+        <label for="click" id="close" class="hamburger-container"><span class="hamburger-btn">x</span></label> -->
+        
+        <!-- ---------- Navbar ------------>
+        <nav class="col-1">
+            <!-- --------- sidebar ------------->
+            <div id="sidebar">
+                <a class="nav-tabs" name="home" href="#home">Home</a>
+                <a class="nav-tabs" name="about" href="#about">About</a>
+                <a class="nav-tabs" name="skills" href="#skills">Skills</a>
+                <a class="nav-tabs" name="education" href="#education">Education</a>
+                <a class="nav-tabs" name="projects" href="#projects">Projects</a>
+                <a class="nav-tabs" name="work" href="#work">Work</a>
+                <a class="nav-tabs" name="contact" href="#contact">Contacts</a>
+            </div>
+            <img class="profile-pic" src="/static/images/photo backgroundless.png" alt="Unable to load image">
+            <strong class="name">Harish Balkhande</strong>
+            <p class="name-desc">Full stack developer</p>
+            <hr>
+            <!-- <div id="tabs"> -->
+            <a class="nav-tabs" name="home" href="#home">Home</a>
+            <a class="nav-tabs" name="about" href="#about">About</a>
+            <a class="nav-tabs" name="skills" href="#skills">Skills</a>
+            <a class="nav-tabs" name="education" href="#education">Education</a>
+            <a class="nav-tabs" name="projects" href="#projects">Projects</a>
+            <a class="nav-tabs" name="work" href="#work">Work Experience</a>
+            <a class="nav-tabs" name="contact" href="#contact">Contacts</a>
+            <!-- </div> -->
+        </nav>
+        <!-- =============================== -->
+        <div class="col-2">
+            <!-- ----Home Section------------ -->
+            <section id="home">
+                <div id="hero">
+                    <img id="hero-pic" class="profile-pic" src="/static/images/photo backgroundless.png" alt="Unable to load image">
+                    <p>Hello,</p>
+                    <!-- <strong>I'm Harish Balkhande</strong> -->
+                    <h1>
+                        <a href="" class="typewrite" data-period="2000" data-type='[ "I am Harish Balkhande" ]' style="color: darkorange; text-decoration: none;">
+                          <span class="wrap"></span>
+                        </a>
+                      </h1>
+                    <p>Web Application Designer And Developer</p>
+                </div>
+            </section>
+            <!-- --------- About Section --------------->
+            <section id="about" class="section-container">
+                <strong class="section-heading">About me</strong>
+                <p>What can a “full-stack web developr” do, you ask?</p>
+
+                <p>&nbsp;&nbsp;&nbsp; I can conjur a website from nothing into existence, fully formed. I do not use tricks, nor is this
+                    magic. I specialize in manipulating the very fabric of the web, its raw materials of HTML, CSS,
+                    JavaScript, and SVG. Linux servers serve me, domains are my domain, and certificates are certain.
+                </p>
+
+                <p>&nbsp;&nbsp;&nbsp; Open-source technologies empower this process. I am a Django and MERN stack development
+                    expert. I can create custom blocks from scratch for any
+                    conceivable need. I have contributed in small ways to these and other open-source efforts and intend
+                    to give back every chance I get.</p>
+
+                <p>&nbsp;&nbsp;&nbsp; My educational background informs ideation to design through the implementation. In 2018 I graduated
+                    from the "Prof Ram Meghe Collage Of Enfineering And Management"  with a specialization in Electronics and Telecommunication.</p> 
+                    <!-- I will always advocate for the user of my interfaces; accessibility is not optional.</p> -->
+
+                <p>&nbsp;&nbsp;&nbsp; I can plan, design, build, launch, and maintain a website myself —did I mention that I have built few freelance project related with embedded system and software domain.</p>
+
+                <p>&nbsp;&nbsp;&nbsp; A full-stack developer knows no bounds. And when they find one they cross it without hesitation,
+                    boldly going into the unknown to return richer for it.</p>
+            </section>
+            <!-- -------------Skills Section----------------- -->
+            <section id="skills">
+                <strong class="section-heading">My Experties</strong>
+                <div class="skill-container">
+                    <div class="skills">
+                        <p class="skills-heading">Python</p>
+                        <div id="progress-container">
+                            <div class="progress-wrap" style="border: 1px solid rgb(233, 10, 222)">
+                                <div class="progressbar"
+                                    style="width: 85%; background-color: rgb(233, 10, 222); border: 1px solid rgb(233, 10, 222);">
+                                </div>
+                            </div>
+                            <div class="progress-persentage">85%</div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <p class="skills-heading">Django</p>
+                        <div id="progress-container">
+                            <div class="progress-wrap" style="border: 1px solid cyan">
+                                <div class="progressbar"
+                                    style="width: 85%; background-color:cyan; border: 1px solid cyan;"></div>
+                            </div>
+                            <div class="progress-persentage">85%</div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <p class="skills-heading">MERN</p>
+                        <div id="progress-container">
+                            <div class="progress-wrap" style="border: 1px solid red">
+                                <div class="progressbar"
+                                    style="width: 60%; background-color: red; border: 1px solid red;"></div>
+                            </div>
+                            <div class="progress-persentage">60%</div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <p class="skills-heading">NEXT.js</p>
+                        <div id="progress-container">
+                            <div class="progress-wrap" style="border: 1px solid goldenrod">
+                                <div class="progressbar"
+                                    style="width: 75%; background-color: goldenrod; border: 1px solid goldenrod;"></div>
+                            </div>
+                            <div class="progress-persentage">75%</div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <p class="skills-heading">mySQL</p>
+                        <div id="progress-container">
+                            <div class="progress-wrap" style="border: 1px solid palevioletred">
+                                <div class="progressbar"
+                                    style="width: 80%; background-color: palevioletred; border: 1px solid palevioletred;">
+                                </div>
+                            </div>
+                            <div class="progress-persentage">80%</div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <p class="skills-heading">Javascript</p>
+                        <div id="progress-container">
+                            <div class="progress-wrap" style="border: 1px solid rgb(47, 255, 57)">
+                                <div class="progressbar"
+                                    style="width: 65%; background-color: rgb(47, 255, 57); border: 1px solid rgb(47, 255, 57);">
+                                </div>
+                            </div>
+                            <div class="progress-persentage">65%</div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <p class="skills-heading">HTML</p>
+                        <div id="progress-container">
+                            <div class="progress-wrap" style="border: 1px solid cyan">
+                                <div class="progressbar"
+                                    style="width: 90%; background-color: cyan; border: 1px solid cyan;"></div>
+                            </div>
+                            <div class="progress-persentage">90%</div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <p class="skills-heading">CSS</p>
+                        <div id="progress-container">
+                            <div class="progress-wrap" style="border: 1px solid red">
+                                <div class="progressbar"
+                                    style="width: 75%; background-color: red; border: 1px solid red;"></div>
+                            </div>
+                            <div class="progress-persentage">75%</div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <p class="skills-heading">mySQL</p>
+                        <div id="progress-container">
+                            <div class="progress-wrap" style="border: 1px solid blue">
+                                <div class="progressbar"
+                                    style="width: 80%; background-color: blue; border: 1px solid blue;"></div>
+                            </div>
+                            <div class="progress-persentage">80%</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- -----------------Education section ------------------- -->
+            <section id="education" class="section-container">
+                <strong class="section-heading">Education</strong>
+
+                <details>
+                    <summary><strong>Batchelor Degree</strong></summary>
+                    <p>University - SGBAU, Amravati</p>
+                    <p>Course - Electronics And Telecommunication Engineering</p>
+                    <p>CGPA - 7.44</p>
+                </details>
+                <details>
+                    <summary><strong>HSC</strong></summary>
+                    <p>Bord - State Board Maharashtra</p>
+                    <p>Course - Vocational Science (Electronics)</p>
+                    <p>Persentile - 57.17%</p>
+                </details>
+                <details>
+                    <summary><strong>SSC</strong></summary>
+                    <p>Board - State Board Maharashtra</p>
+                    <p>course - Regular</p>
+                    <p>Persentile - 70.61%</p>
+                </details>
+            </section>
+            <!-- -----------------Project section ------------------- -->
+            <section id="projects" class="section-container">
+                <strong class="section-heading">Projects</strong>
+                <div class="article-cover">
+                    <h1 style="margin: 3px 20px;">Live Projects</h1>
+                    <article class="article-container">
+                        <strong>Title</strong>
+                        <p>Let's Shop</p>
+
+                        <strong>Description</strong>
+                        <p class="project-description">Aim : To Design a Sample E-commerce Web Application</p>
+                        <p class="project-description">Techinologies Used : Django, HTML, CSS, JavaScript</p>
+                        <p class="project-description">Project Link : <a href="#">abc.com</a></p>
+                        <hr style="width:96%; padding:0; margin: 6px 10px">
+                        
+                        <strong>Title</strong>
+                        <p>Builders</p>
+                        <strong>Description</strong>
+                        <p class="project-description">Aim : To Design a Web Application For Builders</p>
+                        <p class="project-description">Techinologies Used : Next.js, HTML, CSS</p>
+                        <p class="project-description">Project Link : <a href="#">abc.com</a></p>
+                    </article>
+                    <!-- ---------------------------------------------------- -->
+                    <h1 style="margin: 3px 20px;">Practice Projects</h1>
+                    <article class="article-container">
+                        <strong>Title</strong>
+                        <p>Inventry Management System</p>
+                        <strong>Description</strong>
+                        <p class="project-description">Aim : To Design Desktop Application For Hotel</p>
+                        <p class="project-description">Techinologies Used : Python, tkinter(GUI Package)</p>
+                        
+                    </article>
+                    <!-- ----------------------------------------------------------------- -->
+                    <h1 style="margin: 3px 20px;">Academic Projects</h1>
+                    <article class="article-container">
+                        <strong>Title</strong>
+                        <p>Face Recognization Based Door Access System</p>
+                        <strong>Description</strong>
+                        <p class="project-description">Aim : To Design a face Recognization system.</p>
+                        <p class="project-description">Techinologies Used : Python, Raspberry pi, webcam</p>
+                    </article>
+                </div>
+
+            </section>
+            <!-- -----------------Work section ------------------- -->
+            <section id="work" class="section-container">
+                <strong class="section-heading">Work Experience</strong>
+
+                <div class="outer-container">
+                    <ul class="workProgressbar">
+                        <li class="active">
+                            <p class="para">Feeelance projects (Embedded system and Python based)</p>
+                        </li>
+                        <li>
+                            <p class="para">Orega LED's (Manufacturing )</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- -----------------Contact section ------------------- -->
+            <section id="contact" class="section-container">
+                <strong class="section-heading">Contacts</strong>
+                <div class="contact-container">
+                    <div class="contact-card">
+                        <div class="cards">
+                            <div class="icon"><i class="fa fa-envelope icon-size"></i></div>
+                            <div class="detail">harishbalkhande@gmail.com</div>
+                        </div>
+                        <div class="cards">
+                            <div class="icon"><i class="fa fa-linkedin icon-size"></i></div>
+                            <div class="detail">xxxxxxxxxxxx</div>
+                        </div>
+                        <div class="cards">
+                            <div class="icon"><i class="fa fa-github icon-size"></i></div>
+                            <div class="detail">xxxxxxxxxxxxx</div>
+                        </div>
+
+                    </div>
+                    <div class="contact-form" class="section-container">
+                        <form action="#" method="post" class="form" style="margin-top: 0px;">
+                            <input type="text" name="Name" placeholder="Name" disabled>
+                            <input type="email" name="email" placeholder="Email" disabled>
+                            <input type="text" name="subject" placeholder="Subject" disabled>
+                            <textarea name="message" cols="30" rows="7" placeholder="Message" disabled></textarea>
+                            <input type="button" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="/static/js/navbarStyle.js"></script>
+    <script src="/static/js/typingText.js"></script>
+</body>
+
+</html>
