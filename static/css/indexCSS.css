@@ -61,7 +61,7 @@ input[type="checkbox"]{
     height: 100vh;
     position: fixed;
     left: 0;
-    z-index: 1;
+    z-index: 1; 
     background-color: #e5e6ec;
     transition: all 0.7s ease;
 }
@@ -150,7 +150,7 @@ hr{
     justify-content: center;
     height: 70vh;
     /* background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://cdn.pixabay.com/photo/2017/02/05/00/19/web-design-2038872_1280.jpg"); */
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/static/images/background/background.jpg");
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/static/images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
