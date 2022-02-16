@@ -6,7 +6,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
     width: 3%;
     height: 100vh;
     padding-right: 18px;
@@ -175,6 +175,7 @@ hr{
 @media(max-width:768px) {
     .col-2{
         width: 100%;
+        left: 15px;
     }
     #hero-pic{
         display: block;
