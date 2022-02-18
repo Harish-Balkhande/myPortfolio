@@ -2,28 +2,6 @@ body{
     margin: 0;
     padding: 0;
 }
-#sidebar{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
-    width: 3%;
-    height: 100vh;
-    padding-right: 18px;
-    position: fixed;
-    background-color: #e5e6ec;
-    left: -60px;
-    top: 0;
-    transition: all 0.3s ease;
-    transition-delay: 0.8s;
-}
-#sidebar a{
-    writing-mode: vertical-rl;
-    text-orientation: sideways-right;
-    transform: rotate(180deg);
-    padding: 13px 0;
-    margin-left: 15px;
-}
 #grid-container{
     display: flex;
     flex-wrap: nowrap;
@@ -65,38 +43,6 @@ input[type="checkbox"]{
     background-color: #e5e6ec;
     transition: all 0.7s ease;
 }
-@media(max-width:768px){
-    .col-1{
-        left: -300px;
-        width: 30%;
-        transition: all 0.7s ease;
-    }
-    /* #click:checked ~ .col-1{
-        left: 0;
-    }
-    #click:checked ~ #close{
-        display: block;
-        position: fixed;
-        right: 10px;
-        z-index: 2;
-    } */
-    #sidebar{
-        left: 0;
-    }
-}
-@media(max-width:576px){
-    .col-1{
-        left: -300px;
-        width: 40%;
-    }
-    /* #click:checked ~ #close{
-        display: block;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        z-index: 2;
-    } */
-}
 .profile-pic{
     display: block;
     border-radius: 60px;
@@ -124,21 +70,46 @@ hr{
     color: black;
     font-weight: 600;
 }
-.nav-tabs:hover{
-    color: darkorange;
-    text-decoration: underline;
-}
+
+.nav-tabs:hover,
 .active-tab{
     background-color: rgb(61, 57, 57);
     color: darkorange
 }
+@media(max-width:768px){
+    .col-1{
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 7%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+    }
+    .col-1 .profile-pic,
+    .col-1 .name,
+    .name-desc, hr{
+        display: none;
+    }
+    .col-1 a{
+        writing-mode: vertical-rl;
+        text-orientation: sideways-right;
+        transform: rotate(180deg);
+        padding: 13px 0;
+        /* margin-left: 15px; */
+    }
+}
+@media(max-width:576px){
+    .nav-tabs{
+        line-height: 25px;
+    }
 
+}
+   
 /* ---------------------------------------- */
 .col-2{
     position: absolute;
     right: 0;
     width: 80%;
-    /* border: 2px solid purple; */
 }
 
 /* =============== Home section ========== */
@@ -174,8 +145,8 @@ hr{
 }
 @media(max-width:768px) {
     .col-2{
-        width: 100%;
-        left: 15px;
+        width: 93%;
+
     }
     #hero-pic{
         display: block;
@@ -195,7 +166,6 @@ hr{
     margin: 20px auto;
     padding-bottom: 20px;
     width: 80%;
-    /* height: 200px; */
     background-color: rgb(71, 64, 64);
 }
 .skills{
@@ -205,7 +175,7 @@ hr{
     margin: 0;
     color: aliceblue;
 }
-#progress-container{
+.progress-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -215,33 +185,19 @@ hr{
 .progress-wrap{
     width: 8rem;
     height: 3px;
-    /* border: 1px solid purple; */
     border-radius: 3px;
 }
 .progressbar{
-    /* width: 85%; */
     height: 2px;
     margin: 0;
     overflow: hidden;
-    /* border: 1px solid blueviolet; */
-    /* background-color: blueviolet; */
 }
 .progress-persentage{
     margin: 0px 10px;
     margin-bottom: 0px;
     color: aliceblue;
 }
-/* .card-container{
-    width: 120px;
-    height: 110px;
-    margin: 12px;
-    background-color: black;
-}
-.skill-Img{
-    display: block;
-    width: 60%;
-    margin: 14px auto;
-} */
+
 /* ====================== Education Section ================= */
 details{
     margin: 10px 0px;
@@ -251,10 +207,8 @@ details > summary {
     list-style-type: none;
     outline: none;
     cursor: pointer;
-    /* border: 1px solid #e5e6ec; */
     background-color: #e5e6ec;
     padding: 15px;
-    /* border-radius: 15px; */
   }
   
   details > summary::-webkit-details-marker {
@@ -276,10 +230,6 @@ details > summary {
     font-weight: bolder;
     font-size: 25px;
   }
-
-/* details[open]>summary {
-    margin-bottom: 0.5rem;
-  } */
   details > p{
       background-color: #eeeeee;
       margin: 0;
@@ -304,17 +254,12 @@ details > summary {
     padding: 4px 0px;
 }
   /* ===================Work Section ======================= */
-/* #work .outer-container {
-    width: 600px;
-    margin: 100px auto; 
-} */
 #work .workProgressbar {
     counter-reset: step;
 }
 #work .workProgressbar li {
     list-style-type: none;
     width: 100%;
-    /* float: left; */
     font-size: 12px;
     position: relative;
     text-align: center;
@@ -329,7 +274,6 @@ details > summary {
     line-height: 30px;
     border: 2px solid #7d7d7d;
     display: block;
-    /* text-align: center; */
     margin: 34px 0 0px 0px;
     border-radius: 50%;
     background-color: white;
@@ -342,7 +286,6 @@ details > summary {
     background-color: #7d7d7d;
     top: 34px;
     left: 15px;
-    /* top: -58px; */
     z-index: -1;
 }
 #work .workProgressbar li:last-child:after {
@@ -368,12 +311,9 @@ details > summary {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* align-items: center; */
     width: 100%;
 }
 #contact .contact-container .contact-card{
-    /* margin-right: 15px; */
-    /* border: 1px solid red; */
     min-width: 50%;
 }
 #contact .cards{
@@ -393,9 +333,16 @@ details > summary {
     margin-top: 22px;
     margin-left: 15px;
 }
+@media(max-width:768px){
+    #contact .cards{
+        padding: 20px 0px;
+    }
+    #contact .cards .detail{
+        margin-left: 8px;
+    }
+}
 /* ------------------- form --------------------- */
 #contact .contact-form{
-    /* border: 1px solid green; */
     min-width: 50%;
 }
 #contact form{
@@ -406,14 +353,12 @@ details > summary {
 #contact form textarea{
     display: block;
     width: 80%;
-    /* height: 1rem; */
     margin: 15px auto;padding: 15px;
     border: transparent;
     background-color: #f2f3f7;
 }
 #contact form input[type="button"]{
     width: 9rem;
-    /* padding-bottom: 2rem; */
     color: white;
     background-color: blue;
 }
