@@ -289,7 +289,7 @@
                     </div>
 
                     <div class="contact-form" class="section-container">
-                        <form class="form" style="margin-top: 0px;" onsubmit="sendMessage()" reset(); return false;>
+                        <form class="form" style="margin-top: 0px;" onsubmit="sendMessage()" >
                             <input type="text" id="name" placeholder="Name" required>
                             <input type="email" id="email" placeholder="Email" required>
                             <input type="text" id="subject" placeholder="Subject" required>
@@ -318,7 +318,7 @@
                 + "Subject: " + subject + "%0a"
                 + "Message: " + message;
                 
-                // console.log(name,email, subject, message)
+                console.log(name,email, subject, message)
             window.open(url, '_blank').focus();
         }
     </script>
